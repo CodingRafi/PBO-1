@@ -1,4 +1,4 @@
-package com.parking;
+package com.cashier;
 
 public class SystemInfo {
 
