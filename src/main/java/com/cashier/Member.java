@@ -9,23 +9,31 @@ package com.cashier;
  * @author impst
  */
 public class Member {
-    private String id;
+    private String kode;
     private String nama;
     private String noHp;
-    public BadgeMember diskonMember;
+    private BadgeMember badge;
     
-    public Member(String id, String nama, String noHp, BadgeMember diskonMember) {
-        this.id = id;
+    public Member(String kode, String nama, String noHp, BadgeMember badge) {
+        this.kode = kode;
         this.nama = nama;
         this.noHp = noHp;
-        this.diskonMember = diskonMember;
+        this.badge = badge;
+    }
+    
+    public String getKode(){
+        return this.kode;
     }
     
     public String getNama(){
-        return nama;
+        return this.nama;
     }
     
     public String getNoHp(){
-        return noHp;
+        return this.noHp;
+    }
+    
+    public BadgeMember getBadge(){
+        return this.badge;
     }
 }

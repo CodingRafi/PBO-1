@@ -24,18 +24,18 @@ public class Karyawan {
     }
     
     public String getUsername(){
-        return username;
+        return this.username;
     }
     
     public String getPassword(){
-        return password;
+        return this.password;
     }
     
     public String getNama(){
-        return nama;
+        return this.nama;
     }
     
     public String getNip(){
-        return nip;
+        return this.nip;
     }
 }

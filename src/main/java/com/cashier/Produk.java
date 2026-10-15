@@ -23,28 +23,23 @@ public class Produk {
         this.harga = harga;
         this.persenDiskon = persenDiskon;
     }
-
-    public double getHargaSetelahDiskon()
-    {
-        return harga - (harga * persenDiskon / 100);
-    }
-
+   
     public String getNama()
     {
-        return nama;
+        return this.nama;
     }
 
     public double getHarga()
     {
-        return harga;
+        return this.harga;
     }
 
-    public double getPersenDiskon()
+    public int getPersenDiskon()
     {
-        return persenDiskon;
+        return this.persenDiskon;
     }
     
     public String getKode(){
-        return kode;
+        return this.kode;
     }
 }

@@ -20,20 +20,20 @@ public class BadgeMember {
     }
     
     public double hitungPotonganMember(double totalKotor) {
-        double potongan = totalKotor * persenDiskon / 100;
+        double potongan = totalKotor * this.persenDiskon / 100;
 
-        if (potongan > maxDiskon) {
-            potongan = maxDiskon;
+        if (potongan > this.maxDiskon) {
+            potongan = this.maxDiskon;
         }
 
         return potongan;
     }
     
     public String getLevelMember(){
-        return levelMember;
+        return this.levelMember;
     }
     
     public int parsenDiskon(){
-        return persenDiskon;
+        return this.persenDiskon;
     }
 }
