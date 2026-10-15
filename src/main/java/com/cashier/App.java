@@ -38,10 +38,10 @@ public class App extends Application {
         lblTitle.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
         TextField inputUsername = new TextField();
-        inputUsername.setPromptText("Username (contoh: kasir1)");
+        inputUsername.setPromptText("Username");
 
         PasswordField inputPassword = new PasswordField();
-        inputPassword.setPromptText("Password (contoh: 12345)");
+        inputPassword.setPromptText("Password");
 
         Button btnLogin = new Button("Login");
         Label lblError = new Label();
