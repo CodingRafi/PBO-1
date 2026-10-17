@@ -73,7 +73,7 @@ public class App extends Application {
 
     private boolean loginProses(String username, String password) {
         for (int i = 0; i < Data.karyawan.size(); i++) {
-            if (Data.karyawan.get(i).getUsername().equals(username) & Data.karyawan.get(i).getPassword().equals(password)) {
+            if (Data.karyawan.get(i).getUsername().equals(username) && Data.karyawan.get(i).getPassword().equals(password)) {
                 Data.karyawanLogin = Data.karyawan.get(i);
                 karyawanLogin = Data.karyawanLogin;
                 return true;
@@ -221,7 +221,7 @@ public class App extends Application {
 
         for (int k = 0; k < Data.transaksi.size(); k++) {
             Transaksi tran = Data.transaksi.get(k);
-            if (tran.getKaryawan().getNip() == karyawanLogin.getNip()) {
+            if (tran.getKaryawan().getNip().equals(karyawanLogin.getNip())) {
                 transaksiKaryawan.add(tran);
             }
         }
