@@ -422,7 +422,7 @@ public class App extends Application {
 
         HBox memberBox = new HBox(10);
         TextField tfKodeMember = new TextField();
-        tfKodeMember.setPromptText("Kode Member : ");
+        tfKodeMember.setPromptText("Kode Member");
         Button btnMember = new Button("Tambah");
 
         btnMember.setOnAction(new EventHandler<ActionEvent>() {
