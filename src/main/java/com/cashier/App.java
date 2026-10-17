@@ -244,7 +244,7 @@ public class App extends Application {
         Label hargaKotorLabel = new Label("Harga kotor : ");
         hargaKotorLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
-        Label hargaKotorValueLabel = new Label("Rp. " + TransaksiNow.getTotalKotor());
+        Label hargaKotorValueLabel = new Label("Rp " + TransaksiNow.getTotalKotor());
         hargaKotorValueLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
         hargaKotorBox.getChildren().addAll(hargaKotorLabel, hargaKotorValueLabel);
@@ -254,7 +254,7 @@ public class App extends Application {
         Label diskonProdukLabel = new Label("Diskon Produk : ");
         diskonProdukLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
-        Label diskonProdukValueLabel = new Label("Rp. " + TransaksiNow.getDiskonProduk());
+        Label diskonProdukValueLabel = new Label("Rp " + TransaksiNow.getDiskonProduk());
         diskonProdukValueLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
         diskonProdukBox.getChildren().addAll(diskonProdukLabel, diskonProdukValueLabel);
@@ -264,7 +264,7 @@ public class App extends Application {
         Label diskonMemberLabel = new Label("Diskon Member : ");
         diskonMemberLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
-        Label diskonMemberValueLabel = new Label("Rp. " + TransaksiNow.getDiskonMember());
+        Label diskonMemberValueLabel = new Label("Rp " + TransaksiNow.getDiskonMember());
         diskonMemberValueLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
         diskonMemberBox.getChildren().addAll(diskonMemberLabel, diskonMemberValueLabel);
@@ -274,7 +274,7 @@ public class App extends Application {
         Label totalDiskonLabel = new Label("Total Diskon : ");
         totalDiskonLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
-        Label totalDiskonValueLabel = new Label("Rp. " + TransaksiNow.getTotalDiskon());
+        Label totalDiskonValueLabel = new Label("Rp " + TransaksiNow.getTotalDiskon());
         totalDiskonValueLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
         totalDiskonBox.getChildren().addAll(totalDiskonLabel, totalDiskonValueLabel);
@@ -284,7 +284,7 @@ public class App extends Application {
         Label totalBayarLabel = new Label("Total Bayar : ");
         totalBayarLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
-        Label totalBayarValueLabel = new Label("Rp. " + TransaksiNow.getTotalKotor());
+        Label totalBayarValueLabel = new Label("Rp " + TransaksiNow.getTotalKotor());
         totalBayarValueLabel.setStyle("-fx-font-size: 16px; -fx-font-weight: bold;");
 
         totalBayarBox.getChildren().addAll(totalBayarLabel, totalBayarValueLabel);
@@ -325,11 +325,11 @@ public class App extends Application {
 
                     table.setItems(javafx.collections.FXCollections.observableArrayList(TransaksiNow.GetTransaksiProduk()));
 
-                    hargaKotorValueLabel.setText("Rp. " + TransaksiNow.getTotalKotor());
-                    diskonProdukValueLabel.setText("Rp. " + TransaksiNow.getDiskonProduk());
-                    diskonMemberValueLabel.setText("Rp. " + TransaksiNow.getDiskonMember());
-                    totalDiskonValueLabel.setText("Rp. " + TransaksiNow.getTotalDiskon());
-                    totalBayarValueLabel.setText("Rp. " + TransaksiNow.getTotalBayar());
+                    hargaKotorValueLabel.setText("Rp " + TransaksiNow.getTotalKotor());
+                    diskonProdukValueLabel.setText("Rp " + TransaksiNow.getDiskonProduk());
+                    diskonMemberValueLabel.setText("Rp " + TransaksiNow.getDiskonMember());
+                    totalDiskonValueLabel.setText("Rp " + TransaksiNow.getTotalDiskon());
+                    totalBayarValueLabel.setText("Rp " + TransaksiNow.getTotalBayar());
 
                     lblMsg.setText("Produk berhasil dihapus dari transaksi!");
                     lblMsg.setStyle("-fx-text-fill: orange;");
@@ -385,11 +385,11 @@ public class App extends Application {
 
                         TransaksiNow.TambahTranskasiProduk(tp);
 
-                        hargaKotorValueLabel.setText("Rp. " + TransaksiNow.getTotalKotor());
-                        diskonProdukValueLabel.setText("Rp. " + TransaksiNow.getDiskonProduk());
-                        diskonMemberValueLabel.setText("Rp. " + TransaksiNow.getDiskonMember());
-                        totalDiskonValueLabel.setText("Rp. " + TransaksiNow.getTotalDiskon());
-                        totalBayarValueLabel.setText("Rp. " + TransaksiNow.getTotalBayar());
+                        hargaKotorValueLabel.setText("Rp " + TransaksiNow.getTotalKotor());
+                        diskonProdukValueLabel.setText("Rp " + TransaksiNow.getDiskonProduk());
+                        diskonMemberValueLabel.setText("Rp " + TransaksiNow.getDiskonMember());
+                        totalDiskonValueLabel.setText("Rp " + TransaksiNow.getTotalDiskon());
+                        totalBayarValueLabel.setText("Rp " + TransaksiNow.getTotalBayar());
 
                         table.setItems(javafx.collections.FXCollections.observableArrayList(TransaksiNow.GetTransaksiProduk()));
 
@@ -426,9 +426,9 @@ public class App extends Application {
                     if (m.getKode().equals(kode)) {
                         TransaksiNow.SetMember(m);
 
-                        diskonMemberValueLabel.setText("Rp. " + TransaksiNow.getDiskonMember());
-                        totalDiskonValueLabel.setText("Rp. " + TransaksiNow.getTotalDiskon());
-                        totalBayarValueLabel.setText("Rp. " + TransaksiNow.getTotalBayar());
+                        diskonMemberValueLabel.setText("Rp " + TransaksiNow.getDiskonMember());
+                        totalDiskonValueLabel.setText("Rp " + TransaksiNow.getTotalDiskon());
+                        totalBayarValueLabel.setText("Rp " + TransaksiNow.getTotalBayar());
 
                         lblMsg.setText("Berhasil menambahkan member");
                         lblMsg.setStyle("-fx-text-fill: green;");
