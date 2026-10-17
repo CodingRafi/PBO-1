@@ -33,7 +33,7 @@ public class Data {
         
         // Inisiasi data awal Member
         member.add(new Member("001", "Muhamad Rafi Prasetya", "081574434628", diskonMember.get(2)));
-        member.add(new Member("002", "Sabarni Melati Kasuma", "089637049229", diskonMember.get(1)));
+        member.add(new Member("002", "Sabarni Melati Kasuma", "089637049229", diskonMember.get(2)));
         member.add(new Member("003", "Sarah", "089669560516", diskonMember.get(0)));
         member.add(new Member("004", "Dwi Nuryanto", "089698043922", diskonMember.get(1)));
         
@@ -43,5 +43,7 @@ public class Data {
         produk.add(new Produk("3", "003", "Produk 3", 200000, 3));
         produk.add(new Produk("4", "004", "Produk 4", 40000, 10));
         produk.add(new Produk("5", "005", "Produk 5", 160000, 4));
+        produk.add(new Produk("6", "006", "Produk 6", 200000, 7));
+        produk.add(new Produk("7", "007", "Produk 7", 300000, 2));
     }
 }
