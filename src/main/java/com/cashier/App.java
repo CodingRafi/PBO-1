@@ -408,8 +408,17 @@ public class App extends Application {
                 }
             }
         });
+        
+        Button btnKembali = new Button("Kembali");
+        btnKembali.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                TransaksiNow = null;
+                DashboardPage();
+            }
+        });
 
-        inputBox.getChildren().addAll(tfKodeBarang, tfQty, btnTambah);
+        inputBox.getChildren().addAll(btnKembali, tfKodeBarang, tfQty, btnTambah);
 
         HBox memberBox = new HBox(10);
         TextField tfKodeMember = new TextField();
